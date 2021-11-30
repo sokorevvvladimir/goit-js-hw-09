@@ -24,7 +24,7 @@ const options = {
     
     if (selectedDates[0].getTime() < Date.now()) {
         const message = "Please choose a date in the future";
-        Notiflix.Notify.failure(message);;
+        Notiflix.Notify.failure(message);
       } else {
         refs.start.disabled = false;
         

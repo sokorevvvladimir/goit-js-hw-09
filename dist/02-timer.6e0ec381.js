@@ -2593,13 +2593,10 @@ const options = {
   dateFormat: "Y-m-d",
 
   onClose(selectedDates) {
-    // console.log(selectedDates[0].getTime());
     if (selectedDates[0].getTime() < Date.now()) {
       const message = "Please choose a date in the future";
 
       _notiflix.default.Notify.failure(message);
-
-      ;
     } else {
       refs.start.disabled = false;
       refs.start.addEventListener('click', () => {
@@ -2683,7 +2680,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "4475" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "1362" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
