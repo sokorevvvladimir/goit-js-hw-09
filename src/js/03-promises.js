@@ -14,7 +14,7 @@ function createPromise({ index, timeDelay }) {
   const shouldResolve = Math.random() > 0.3;
 
   return new Promise((resolve, reject) => {
-    setInterval(() => {
+    setTimeout(() => {
       if (shouldResolve) {
         resolve({index, timeDelay});
       } else {
